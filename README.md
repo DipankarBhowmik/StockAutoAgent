@@ -20,48 +20,59 @@ Here is the high-level design below.
 
 ## Key Process Stages:
 ### Input Phase:
-User enters stock ticker
-System validates input format
+- User enters stock ticker
+- System validates input format
 
 ### Data Acquisition:
-Parallel fetching via:
- -  yFinance API (fundamentals)
- -  Web scraping (price/news)
-Error handling for failed requests
+- Parallel fetching via:
+  - yFinance API (fundamentals)
+  - Web scraping (price/news)
+- Error handling for failed requests
 
 ### Data Processing:
-Statistics:
- -  Categorization (Valuation/Financial/Dividends/Trading) 
-- Number formatting (currency, percentages)
-### News:
- - Metadata extraction (source, timestamp) 
-- Summary truncation 
-- Link formatting
+- Statistics:
+  - Categorization (Valuation/Financial/Dividends/Trading) 
+  - Number formatting (currency, percentages)
+- News:
+  - Metadata extraction (source, timestamp) 
+  - Summary truncation 
+  - Link formatting
 
 ### UI Rendering:
-Price header with refresh time
-Tabbed statistics display
-Expandable news cards
-AI analysis generation: 
-- Prompt engineering 
-- LLM processing 
-- Markdown rendering
+- Price header with refresh time
+- Tabbed statistics display
+- Expandable news cards
+- AI analysis generation: 
+  - Prompt engineering 
+  - LLM processing 
+  - Markdown rendering
 
 ### Output:
-Complete dashboard with:
-- Real-time data
-- Organized statistics
-- Detailed news
-- AI recommendations
+- Complete dashboard with:
+ - Real-time data
+ - Organized statistics
+ - Detailed news
+ - AI recommendations
 
 ### Error Handling Paths:
-Invalid tickers skip processing
-Failed API calls show user-friendly errors
-Missing data fields show "N/A" gracefully
+- Invalid tickers skip processing
+- Failed API calls show user-friendly errors
+- Missing data fields show "N/A" gracefully
 
-
+## Install Ollama from https://ollama.com/download and let it operate in the background. Then, to pull llama3, use the following command.
+  ollama pull llama3
 ## Run the following command in CMD after saving and configuring (installing the modules) the file: finance_yahoo.py
   streamlit run finance_yahoo.py
+
+These are the modules that need to be installed
+
+- !pip install -U langchain
+- !pip install -U langchain_community
+- !pip install beautifulsoup4
+- !pip install streamlit
+- !pip install yfinance
+- !pip install ollama 
+- !pip install requests
 
 ## Details on the architecture are provided below
   <img src="Advanced Stock Research Agent_detail.png" alt="Agentic_rag" width="400"/>
