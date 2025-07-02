@@ -8,12 +8,12 @@ Decision-Ready Outputs: Generates a structured report with a buy/hold/sell recom
 
 The magic? It does this offline using open-source tools, with no subscriptions or data leaks. Whether you're an investor looking for an edge, a developer curious about agentic AI, or a student exploring applied LLMs, this project turns cutting-edge research techniques into a practical, free toolkit.
 Here is the high-level design below.
-Tools & Tech Used:
-LangChain (for autonomous agent workflows)
-Llama-3 via Ollama (local LLM that reasons about stocks)
-yFinance (free Yahoo Finance API alternative)
-BeautifulSoup/Requests (for scraping and cleaning data)
-Streamlit (interactive web dashboard)
+## Tools & Tech Used:
+### LangChain (for autonomous agent workflows)
+### Llama-3 via Ollama (local LLM that reasons about stocks)
+### yFinance (free Yahoo Finance API alternative)
+### BeautifulSoup/Requests (for scraping and cleaning data)
+### Streamlit (interactive web dashboard)
 
 ## Key Process Stages:
 ### Input Phase:
