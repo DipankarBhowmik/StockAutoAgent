@@ -15,6 +15,9 @@ Here is the high-level design below.
 ### BeautifulSoup/Requests (for scraping and cleaning data)
 ### Streamlit (interactive web dashboard)
 
+## Details on the architecture are provided below
+  <img src="high-level Advanced Stock Research Agent.png" alt="Agentic_rag" width="400"/>
+
 ## Key Process Stages:
 ### Input Phase:
 User enters stock ticker
@@ -59,4 +62,7 @@ Missing data fields show "N/A" gracefully
 
 ## Run the following command in CMD after saving and configuring (installing the modules) the file: finance_yahoo.py
   streamlit run finance_yahoo.py
+
+## Details on the architecture are provided below
+  <img src="Advanced Stock Research Agent_detail.png" alt="Agentic_rag" width="400"/>
 
