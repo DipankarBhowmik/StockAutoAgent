@@ -15,7 +15,7 @@ Here is the high-level design below.
 ### BeautifulSoup/Requests (for scraping and cleaning data)
 ### Streamlit (interactive web dashboard)
 
-## Details on the architecture are provided below
+## Here is the high-level design below
   <img src="high-level Advanced Stock Research Agent.png" alt="Agentic_rag" width="400"/>
 
 ## Key Process Stages:
