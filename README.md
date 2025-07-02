@@ -55,3 +55,8 @@ Complete dashboard with:
 Invalid tickers skip processing
 Failed API calls show user-friendly errors
 Missing data fields show "N/A" gracefully
+
+
+## Run the following command in CMD after saving and configuring (installing the modules) the file: finance_yahoo.py
+  streamlit run finance_yahoo.py
+
