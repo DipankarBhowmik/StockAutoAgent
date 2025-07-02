@@ -1,0 +1,14 @@
+Install Ollama from https://ollama.com/download and let it operate in the background. Then, to pull llama3, use the following command.
+  
+ollama pull llama3
+
+
+These are the modules that need to be installed
+
+!pip install -U langchain
+!pip install -U langchain_community
+!pip install beautifulsoup4
+!pip install streamlit
+!pip install yfinance
+!pip install ollama 
+!pip install requests
